@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('../public/GothamBook.ttf');
+}
+
+* {
+  font-family: 'Gotham Book', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont,

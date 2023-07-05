@@ -6,6 +6,8 @@ import {
 } from 'react-bootstrap';
 import {BiSolidShip} from 'react-icons/bi';
 import {FaUser} from 'react-icons/fa';
+import {LinkContainer} from 'react-router-bootstrap';
+
 const Header = () => {
   return (
     <header>
@@ -16,17 +18,21 @@ const Header = () => {
         collapseOnSelect
       >
         <Container>
-          <Navbar.Brand href='/'>
-            <BiSolidShip className='mx-2' />
-            SiCargo
-          </Navbar.Brand>
+          <LinkContainer to='/'>
+            <Navbar.Brand>
+              <BiSolidShip className='mx-2' />
+              SiCargo
+            </Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
-              <Nav.Link href='/login'>
-                <FaUser className='mx-2' />
-                Login
-              </Nav.Link>
+              <LinkContainer to='/login'>
+                <Nav.Link>
+                  <FaUser className='mx-2' />
+                  Login
+                </Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Table} from 'react-bootstrap';
 import projects from '../projects';
+import {Link} from 'react-router-dom';
 
 const HomeScreen = () => {
   return (
@@ -26,8 +27,20 @@ const HomeScreen = () => {
         <tbody>
           {projects.map(project => (
             <tr key={project._id}>
-              <td>{project.spal_number}</td>
-              <td>{project.project_number}</td>
+              <td>
+                <Link
+                  to={`/project/${project._id}`}
+                >
+                  {project.spal_number}
+                </Link>
+              </td>
+              <td>
+                <Link
+                  to={`/project/${project._id}`}
+                >
+                  {project.project_number}
+                </Link>
+              </td>
               <td>{project.type_charter}</td>
               <td>{project.shipper}</td>
               <td>{project.tug_boat}</td>
