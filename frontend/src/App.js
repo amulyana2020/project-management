@@ -1,12 +1,16 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import {Container} from 'react-bootstrap';
+import HomeScreen from './screens/HomeScreen';
 
 function App() {
   return (
-    <div className=''>
+    <div>
       <Header />
-      <main className='py-3 text-center'>
-        <h5>Welcome to SiCargo</h5>
+      <main className='py-3 vh-100'>
+        <Container>
+          <HomeScreen />
+        </Container>
       </main>
       <Footer />
     </div>
