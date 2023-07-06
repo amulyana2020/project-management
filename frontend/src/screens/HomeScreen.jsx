@@ -1,9 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Table} from 'react-bootstrap';
-import projects from '../projects';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 const HomeScreen = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const {data} = await axios.get(
+        '/api/projects'
+      );
+      setProjects(data);
+    };
+    fetchProjects();
+  }, []);
+
   return (
     <>
       <h5>Latest Projects</h5>

@@ -1,13 +1,22 @@
-import React from 'react';
-import projects from '../projects';
+import React, {useEffect, useState} from 'react';
 import {useParams, Link} from 'react-router-dom';
 import {Table} from 'react-bootstrap';
+import axios from 'axios';
 
 const ProjectScreen = () => {
+  const [project, setProject] = useState({});
+
   const {id: projectId} = useParams();
-  const project = projects.find(
-    p => p._id === projectId
-  );
+
+  useEffect(() => {
+    const fetchProject = async () => {
+      const {data} = await axios.get(
+        `/api/projects/${projectId}`
+      );
+      setProject(data);
+    };
+    fetchProject();
+  }, [projectId]);
 
   return (
     <div>
@@ -65,12 +74,6 @@ const ProjectScreen = () => {
             <td className='p-2'>Sales</td>
             <td className='p-2'>
               {project.sales}
-            </td>
-          </tr>
-          <tr>
-            <td className='p-2'>Type Charter</td>
-            <td className='p-2'>
-              {project.type_charter}
             </td>
           </tr>
           <tr>
