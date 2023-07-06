@@ -21,7 +21,7 @@ const Header = () => {
           <LinkContainer to='/'>
             <Navbar.Brand>
               <BiSolidShip className='mx-2' />
-              SiCargo
+              CPS Project Management
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />

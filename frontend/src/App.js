@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      <main className='py-3 vh-100'>
+      <main className='py-3'>
         <Container>
           <Outlet />
         </Container>

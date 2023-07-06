@@ -11,6 +11,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
+import ProjectScreen from './screens/ProjectScreen';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,10 @@ const router = createBrowserRouter(
         index={true}
         path='/'
         element={<HomeScreen />}
+      />
+      <Route
+        path='/project/:id'
+        element={<ProjectScreen />}
       />
     </Route>
   )
