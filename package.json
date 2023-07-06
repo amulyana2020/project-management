@@ -1,0 +1,12 @@
+{
+  "name": "project-management",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Project Management for CPS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Ai Mulyana",
+  "license": "MIT"
+}
