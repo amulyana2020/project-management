@@ -1,0 +1,45 @@
+const projects = [
+  {
+    _id: '1',
+    spal_number: '20230001',
+    project_number: '1001',
+    type_charter: 'Time Charter',
+    shipper: 'PT Energi Sukses Andalan',
+    tug_boat: 'TB.INDO POWER 12',
+    pic: 'Teguh',
+    sales: 'Tommy',
+  },
+  {
+    _id: '2',
+    spal_number: '20230002',
+    project_number: '1002',
+    type_charter: 'Freight Charter',
+    shipper: 'PT Energi Sukses Andalan',
+    tug_boat: 'TB.INDO POWER 12',
+    pic: 'Teguh',
+    sales: 'Tommy',
+  },
+  {
+    _id: '3',
+    spal_number: '20230003',
+    project_number: '1003',
+    type_charter: 'Freight Charter',
+    shipper: 'PT Energi Sukses Andalan',
+    tug_boat: 'TB.INDO POWER 12',
+    pic: 'Teguh',
+    sales: 'Tommy',
+  },
+  {
+    _id: '4',
+    spal_number: '20230004',
+    project_number: '1004',
+    type_charter: 'Time Charter',
+    shipper: 'PT Energi Sukses Andalan',
+    tug_boat: 'TB.INDO POWER 12',
+    pic: 'Mia Kartika',
+    pic: 'Teguh',
+    sales: 'Tommy',
+  },
+];
+
+export default projects;
