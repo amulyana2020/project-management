@@ -48,15 +48,12 @@ const ProjectScreen = () => {
             <td className='p-2'></td>
           </tr>
           <tr>
-            <td className='p-2'>Laycan</td>
-            <tr>
-              <td className='p-2'>Start</td>
-              <td className='p-2'></td>
-            </tr>
-            <tr>
-              <td className='p-2'>Finish</td>
-              <td className='p-2'></td>
-            </tr>
+            <td className='p-2'>Laycan Start</td>
+            <td className='p-2'></td>
+          </tr>
+          <tr>
+            <td className='p-2'>Laycan End</td>
+            <td className='p-2'></td>
           </tr>
           <tr>
             <td className='p-2'>
